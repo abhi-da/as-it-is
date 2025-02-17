@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Test 1",
+        "batch": "Test 1",
+        "teamName": "Team 1",
+        "individualSport": "Badminton"
+    },
+    {
+        "name": "Harshad",
+        "batch": "M.Sc. 23",
+        "teamName": "Marxist Mosters",
+        "individualSport": "(Not playing: Badminton, Lawn Tennis, Table Tennis, Carrom, Chess"
+    },
+    {
+        "name": "Vaishnavi Gupta ",
+        "batch": "Msc 24",
+        "teamName": "Marxist monsters",
+        "individualSport": "(not playing: Badminton, lawn tennis, table tennis, chess)"
+    },
+    {
+        "name": "Rohan Banerjee",
+        "batch": "M.Sc. 2023",
+        "teamName": "Keynesian Kings",
+        "individualSport": "Badminton, Tennis, TT, Chess, Carrom"
+    },
+    {
+        "name": "PUSHPENDU ",
+        "batch": "M.Sc. 2023",
+        "teamName": "Adam's Army",
+        "individualSport": "Badminton, Lawn Tennis, Table Tennis, Carrom, Chess, Swimming"
+    },
+    {
+        "name": "MANJESH KUMAR",
+        "batch": "M.Sc 1st year",
+        "teamName": "Keynesian Kings",
+        "individualSport": "TT, Carrom"
+    },
+    {
+        "name": "MANJESH KUMAR",
+        "batch": "M.Sc 1st year",
+        "teamName": "Keynesian Kings",
+        "individualSport": "Chess"
+    }
+]
