@@ -1,0 +1,101 @@
+/* Amazon-style CSS for Rule Book Page */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+}
+
+.amazon-header {
+    background-color: #232f3e;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.amazon-header h1 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.amazon-header p {
+    font-size: 18px;
+    color: #d5d5d5;
+}
+
+.rules-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.rules-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rules-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.sports a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007185;
+    text-decoration: none;
+}
+
+.sports a:hover {
+    text-decoration: underline;
+}
+
+.view-rules {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff9900;
+    text-decoration: none;
+    background-color: #232f3e;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.view-rules:hover {
+    background-color: #37475a;
+    text-decoration: underline;
+}
+
+.amazon-footer {
+    background-color: #232f3e;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.amazon-footer p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.home-link {
+    color: #ff9900;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.home-link:hover {
+    text-decoration: underline;
+}
+

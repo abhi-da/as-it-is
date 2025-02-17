@@ -1,0 +1,100 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f2f2;
+    color: #111;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #232f3e;
+    border-bottom: 2px solid #febd69;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.category-card {
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f7fafa;
+    padding: 15px 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+.category-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.category-card h2 {
+    font-size: 1.8rem;
+    color: #131921;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 8px;
+}
+
+.sports-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sports-list li {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #111;
+}
+
+.sports-list li strong {
+    color: #007185;
+}
+
+.sports-list a {
+    text-decoration: none;
+    color: #007185;
+    font-size: 1.2rem;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.sports-list a:hover {
+    color: #febd69;
+    padding-left: 5px;
+}
+
+.amazon-footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #232f3e;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.amazon-footer a.home-link {
+    color: #febd69;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.amazon-footer a.home-link:hover {
+    color: #ffa41c;
+}
+

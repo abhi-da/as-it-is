@@ -1,0 +1,139 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+/* Main Content Styles */
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Two-Column Layout */
+ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns for larger screens */
+    gap: 20px; /* Space between items */
+    list-style: none;
+    padding: 0;
+}
+
+/* Default styling for list items */
+ul li {
+    font-size: 1.2rem;
+    padding: 20px;
+    background-color: #ecf0f1;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Special styling for first two items */
+ul li:first-child,
+ul li:nth-child(2) {
+    background-color: #ffcccc; /* Light red for first two players */
+    font-weight: bold;
+}
+
+/* Hover effect for all list items */
+ul li:hover {
+    background-color: #3498db;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Back Link */
+p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+p a {
+    text-decoration: none;
+    color: #3498db;
+    font-size: 1.1rem;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    /* Ensure one-column layout on small screens */
+    ul {
+        grid-template-columns: 1fr; 
+    }
+
+    ul li {
+        font-size: 1rem;
+    }
+
+    p a {
+        font-size: 1rem;
+    }
+}
+
+/* Extra breakpoint for very small screens (phones) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    ul {
+        grid-template-columns: 1fr;
+    }
+
+    ul li {
+        font-size: 0.9rem;
+        padding: 15px;
+    }
+
+    p a {
+        font-size: 0.9rem;
+    }
+}
+

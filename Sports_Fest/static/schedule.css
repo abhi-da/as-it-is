@@ -1,0 +1,140 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Header */
+.amazon-header {
+    background-color: #131921;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+.amazon-header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Main container */
+.container {
+    width: 80%;
+    margin: 30px auto;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #232f3e;
+}
+
+/* Schedule List */
+.schedule-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.schedule-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.schedule-header h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #232f3e;
+    margin-bottom: 8px;
+}
+
+.match-teams {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #f77f00;
+    margin-bottom: 5px;
+}
+
+.match-type {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #f4a300;
+    background-color: #fdf0c5;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+/* Match details */
+.schedule-details p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+.schedule-details strong {
+    color: #232f3e;
+}
+
+/* Schedule result */
+.schedule-result {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #e9f5e3;
+    border-left: 4px solid #00b300;
+}
+
+.schedule-placeholder {
+    text-align: center;
+    background-color: #fffae6;
+    padding: 20px;
+    border: 1px solid #f0c30f;
+    border-radius: 8px;
+}
+
+.schedule-placeholder h3 {
+    font-size: 1.5rem;
+    color: #f77f00;
+    font-weight: 700;
+}
+
+.schedule-placeholder p {
+    font-size: 1rem;
+    color: #444;
+}
+
+/* Footer */
+.amazon-footer {
+    background-color: #131921;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.amazon-footer p {
+    font-size: 1rem;
+}
+
+.amazon-footer .home-link {
+    color: #ff9900;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.amazon-footer .home-link:hover {
+    text-decoration: underline;
+}
+

@@ -1,0 +1,287 @@
+/* Apply background image to the entire body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('/static/images/image1.jpg'); /* Path to your background image */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    color: #fff; /* White text for contrast against the background */
+    animation: fadeIn 2s ease-out; /* Add a fade-in effect */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Header styling */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 10px; /* Reduced padding for a smaller header */
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Gradient background */
+    color: #fff;
+    font-family: 'Great Vibes', cursive; /* Font from Google Fonts */
+    font-size: 1.8em; /* Decreased font size */
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Slightly reduced letter spacing */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-bottom: 3px solid #ffd700;
+    position: relative;
+    z-index: 10;
+    animation: slideInHeader 1.5s ease-out; /* Add slide-in effect */
+}
+
+/* Slide-in effect for header */
+@keyframes slideInHeader {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Decorative underline effect */
+header::after {
+    content: '';
+    width: 50px;
+    height: 4px;
+    background-color: #ffd700;
+    margin-top: 10px;
+    display: block;
+    border-radius: 5px;
+}
+
+/* Subtitle styling */
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #ffecd1;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-family: 'Oswald', sans-serif; /* Consistent font styling */
+    animation: fadeIn 2s ease-out; /* Subtitle fade-in effect */
+}
+
+/* Navigation menu styling */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(135deg, #2a5298, #1e3c72); /* Gradient background for depth */
+    border-radius: 30px; /* Rounded corners for a sleek look */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow to lift the bar */
+    padding: 10px 0; /* Vertical padding for balance */
+    animation: slideInMenu 1s ease-out; /* Menu slide-in animation */
+}
+
+/* Slide-in effect for menu */
+@keyframes slideInMenu {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Styling individual menu items */
+nav ul li {
+    margin: 0 20px;
+}
+
+/* Styling the anchor links inside the list items */
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    font-family: 'Arial', sans-serif;
+    padding: 10px 15px;
+    display: block; /* Ensures clickable area is around the entire link */
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+    border-radius: 5px; /* Rounded corners for each link */
+    animation: fadeIn 2s ease-out; /* Fade-in effect on links */
+}
+
+/* Hover effect for links */
+nav ul li a:hover {
+    background-color: #ffd700; /* Gold background on hover */
+    color: #1e3c72; /* Dark text color for contrast */
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds subtle shadow on hover */
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #2a5298, #1e3c72); /* Gradient background */
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 1em; /* Slightly larger text */
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    z-index: 10;
+    border-top: 3px solid #ffd700; /* Gold border on top */
+    border-radius: 10px 10px 0 0; /* Rounded top corners */
+    animation: slideUpFooter 1s ease-out; /* Slide-up footer animation */
+}
+
+/* Slide-up animation for footer */
+@keyframes slideUpFooter {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Footer Text Enhancements */
+footer p {
+    margin: 0;
+    font-weight: 150; /* Light weight for the text */
+    letter-spacing: 1px;
+}
+
+/* Footer Links */
+footer a {
+    color: #ffd700; /* Gold color for links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for links in the footer */
+footer a:hover {
+    color: #fff; /* Change to white when hovering */
+}
+
+/* Main Content Styling */
+main {
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9); /* More opaque white background for better readability */
+    border-radius: 15px; /* Increased border radius for smoother corners */
+    margin: 30px auto; /* Centered with more margin for better spacing */
+    max-width: 900px; /* Content width limit */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Stronger shadow for depth */
+    font-family: 'Roboto', sans-serif; /* Modern font */
+    line-height: 1.6; /* Better line spacing for readability */
+    position: relative; /* Positioning for any future pseudo-elements */
+    background: #f4f4f9; /* Light grayish background for a soft look */
+    animation: fadeIn 2s ease-out; /* Fade-in effect for the main content */
+}
+
+/* Optional Decorative Border Effect */
+main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: #ffd700; /* Gold-colored top border */
+    border-radius: 10px 10px 0 0; /* Rounded top corners */
+}
+
+/* Optional Subtitle Styling */
+main h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: #2a5298;
+}
+
+/* Optional Paragraph Styling */
+main p {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Mobile Optimizations */
+@media screen and (max-width: 1080px) {
+    /* Header font size */
+    header {
+        font-size: 1em; /* Smaller font size for mobile */
+        padding: 5px 5px; /* Reduced padding */
+    }
+
+    /* Header subtitle font size */
+    header p {
+        font-size: 0.8em; /* Adjusted subtitle font size */
+    }
+
+    /* Navigation menu */
+    nav ul {
+        display: grid;
+        grid-auto-flow: row; /* Stack items vertically */
+        justify-items: center; /* Center items horizontally */
+    }
+
+
+    /* Navigation items */
+    nav ul li {
+        margin: 5px 0; /* Reduced margin for mobile */
+    }
+
+    /* Footer */
+    footer {
+        font-size: 0.9em; /* Smaller font size */
+        padding: 10px;
+    }
+
+    /* Main content */
+    main {
+        padding: 20px;
+        margin: 20px;
+        max-width: 100%; /* Full width on smaller screens */
+    }
+
+    /* Optional: Reduce size of main h2 for smaller screens */
+    main h2 {
+        font-size: 1.5em; /* Smaller title font size */
+    }
+
+    /* Optional: Adjust paragraph font size */
+    main p {
+        font-size: 1em; /* Smaller text for better fit */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Further optimization for very small screens (e.g., phones) */
+    header {
+        font-size: 1.3em; /* Even smaller font size */
+    }
+
+    /* Navigation items font size */
+    nav ul li a {
+        font-size: 1em; /* Smaller font size for links */
+    }
+
+    /* Footer text size */
+    footer {
+        font-size: 0.8em; /* Smaller footer font size */
+    }
+
+    /* Main content padding */
+    main {
+        padding: 10px; /* Reduced padding */
+    }
+}

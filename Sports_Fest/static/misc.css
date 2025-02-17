@@ -1,0 +1,128 @@
+/* Global Styles */
+body {
+    font-family: 'Amazon Ember', sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #131921;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+.registration-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+.form-group input:focus {
+    border-color: #ff9900;
+    outline: none;
+}
+
+.submit-btn {
+    background-color: #ff9900;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #e68900;
+}
+
+/* Registrations List */
+.registrations {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.registrations ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.registrations ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.registrations ul li:last-child {
+    border-bottom: none;
+}
+
+.registrations ul li span {
+    color: #555;
+    font-size: 16px;
+}
+
+.registrations h2 {
+    color: #131921;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.amazon-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #232f3e;
+    color: #ffffff;
+    font-size: 16px;
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+.amazon-footer .home-link {
+    color: #ff9900;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.amazon-footer .home-link:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+

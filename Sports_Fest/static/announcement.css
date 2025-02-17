@@ -1,0 +1,82 @@
+/* Amazon-style CSS for Announcements Page */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #232f3e;
+    margin-bottom: 20px;
+}
+
+.announcements-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.announcement-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.announcement-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.announcement-card h2 {
+    font-size: 28px;
+    color: #007185;
+    margin-bottom: 10px;
+}
+
+.announcement-card p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Amazon-style footer */
+.amazon-footer {
+    background-color: #232f3e;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.amazon-footer p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.home-link {
+    color: #ff9900;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.home-link:hover {
+    text-decoration: underline;
+}
+
