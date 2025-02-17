@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volleyball Game Rules</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='sports.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Volleyball Game Rules</h1>
+    </header>
+    <section id="team-setup">
+        <h2>Team Setup</h2>
+        <ul>
+            <li>The game will be played with 6 players on each team, with rolling substitutions allowed.</li>
+            <li>Teams must wear matching jerseys with assigned numbers. Players should wear at least jogging shoes.</li>
+            <li>Wearing wristwatches, smartwatches, kadas, necklaces, rosaries, wristbands, or earrings is prohibited. Spectacles are allowed.</li>
+        </ul>
+    </section>
+    <section id="substitutions">
+        <h2>Substitutions</h2>
+        <ul>
+            <li>One player must be assigned as the game captain, who will manage the rolling substitutions.</li>
+            <li>Each team can make unlimited rolling substitutions during the game.</li>
+        </ul>
+    </section>
+    <section id="gameplay">
+        <h2>Gameplay</h2>
+        <ul>
+            <li>Each team is allowed a maximum of 3 touches on the ball before it must be passed to the opponent’s court. Blocks do not count as a touch.</li>
+            <li>The ball cannot be caught, held, or thrown. It may be played off the net during a volley or serve.</li>
+            <li>A ball hitting a boundary line is considered in, and a ball completely outside the court is out.</li>
+            <li>It is illegal to contact the ball with any part of the body except the arm and foot.</li>
+            <li>Both underarm and overarm serves are allowed. If a player touches the boundary line while serving, it will result in a foul and the opponent gains a point.</li>
+            <li>If a player crosses the center line or touches the net during the last move, it will be counted as a foul and the other team is awarded a point.</li>
+        </ul>
+    </section>
+    <section id="match-format">
+        <h2>Match Format</h2>
+        <ul>
+            <li>Each round consists of 3 sets, and the third place and finals consist of 5 sets.</li>
+            <li>Each set is played to 11 points, with a 2-point difference required to win after the score reaches 10.</li>
+            <li>The team that wins the most sets wins the game.</li>
+        </ul>
+    </section>
+    <section id="knockouts">
+        <h2>Knockout Format</h2>
+        <ul>
+            <li>The knockout format is as follows:
+                <ul>
+                    <li>Game 1: A vs B</li>
+                    <li>Game 2: C vs D</li>
+                    <li>3rd Place Game: Loser Game 1 vs Loser Game 2</li>
+                    <li>Finals: Winner Game 1 vs Winner Game 2</li>
+                </ul>
+            </li>
+            <li>The first round will be decided by a draw of lots. The first-round starting team will be decided by a coin toss.</li>
+            <li>The organizers' decisions will be final based on the rules specified.</li>
+        </ul>
+    </section>
+
+
+
+    <footer class="amazon-footer">
+        <p>&copy; Sports Committee - IGIDR | All Rights Reserved</p>
+        <p><a href="{{ url_for('index') }}" class="home-link">Back to Home Page</a></p>
+    </footer>
+</body>
+</html>
+
+

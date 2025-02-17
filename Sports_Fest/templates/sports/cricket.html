@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Game Rules</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='sports.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Cricket Game Rules</h1>
+    </header>
+    <section id="overview">
+        <h2>Game Overview</h2>
+        <p>Cricket will be played between two teams, each made up of 7 players. The game consists of two innings, where each team takes turns in batting and fielding/bowling. Each inning will be of 8 overs.</p>
+    </section>
+    <section id="batting">
+        <h2>Batting Rules</h2>
+        <ul>
+            <li>Each time a batsman runs one full length of the pitch, it equals 1 run.</li>
+            <li>Hitting the ball to the boundary along the ground earns 4 runs.</li>
+            <li>Hitting the ball over the boundary on the full earns 6 runs.</li>
+            <li>The aim is to score as many runs as possible before getting out.</li>
+            <li>If a batsman hits the ball out of the campus, they will be declared out.</li>
+        </ul>
+    </section>
+    <section id="bowling">
+        <h2>Bowling Rules</h2>
+        <ul>
+            <li>One bowler from each team can bowl a maximum of 3 overs.</li>
+            <li>No bowler can bowl illegally without the batsman's consent, otherwise, it will be declared a no ball.</li>
+        </ul>
+    </section>
+    <section id="fielding">
+        <h2>Fielding Rules</h2>
+        <ul>
+            <li>Fielding team attempts to get the batsman out by hitting the wickets with the ball, catching a batsman's shot on the full, or hitting the wickets before the batsman can run to the other end of the pitch.</li>
+            <li>Fielders can be substituted within the team.</li>
+        </ul>
+    </section>
+    <section id="out-rules">
+        <h2>Out Rules</h2>
+        <ul>
+            <li>Hitting the wicket with the bat is considered out.</li>
+            <li>Players can only be retired in case of a serious injury.</li>
+            <li>There is no provision for declaring a playing batsman.</li>
+            <li>If the ball hits the sides of the lawn not designated as boundaries, it results in a single run without a change of strike.</li>
+            <li>There is no provision for out if the ball gets deflected by the surrounding trees.</li>
+        </ul>
+    </section>
+    <section id="dead-ball">
+        <h2>Dead Ball Rules</h2>
+        <p>If any new situation arises, the ball will be called a dead ball.</p>
+    </section>
+    <section id="disputes">
+        <h2>Dispute Resolution</h2>
+        <p>All disputes will be resolved through mutual consensus.</p>
+    </section>
+
+
+    <footer class="amazon-footer">
+        <p>&copy; Sports Committee - IGIDR | All Rights Reserved</p>
+        <p><a href="{{ url_for('index') }}" class="home-link">Back to Home Page</a></p>
+    </footer>
+</body>
+</html>
+

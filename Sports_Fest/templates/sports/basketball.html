@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Rules</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='sports.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Basketball Rules</h1>
+
+            <p>This sport will be a mixed team sport. Each team needs to provide 2 female + 2 male players. You can keep as many substitutes as you want, and there will be rolling substitutions.</p>
+    </header>
+    <section id="definitions">
+    <h2>Definitions</h2>
+    <ul>
+        <p>This sport will be a mixed team sport. Each team needs to provide 2 female + 2 male players. You can keep as many substitutes as you want, and there will be rolling substitutions.</p>
+        <li><b>Offense team:</b> The team which has the ball is called the offense team.</li>
+        <li><b>Defense team:</b> The team that tries to stop the offense team from scoring the basket is called the defense team.</li>
+        <li><b>3-point line:</b> The outermost curve on the basketball court is called the 3-point line.</li>
+    </ul>
+    </section id="definitions">
+    <section id="definitions">
+    <h2>Points System</h2>
+    <ol>
+        <li>If you score a basket outside the 3-point line, your team will be awarded 3 points (outside the green area and black curve - Figure 1).</li>
+        <li>If you score from anywhere inside the 3-point line, you will be given 2 points (green area and red area combined - Figure 1).</li>
+    </ol>
+    </section id="definitions">
+    <section id="definitions">
+    <h2>Game Rules</h2>
+    <ul>
+        <li>The matches will be 10 minutes long and the game will be half court.</li>
+        <li>There will be a 5-second foul for the offensive team and a 12-second foul for the defensive team. This means:
+            <ul>
+                <li>The team with the ball can't stay in the red area (Figure 1) for more than 5 seconds.</li>
+                <li>The defensive team can't stay in the red area (Figure 1) for more than 12 seconds.</li>
+            </ul>
+        </li>
+        <li>Since this is a half-court game, in the event of a rebound by the defense team, they must move out to the 3-point line (outside the green area - Figure 2) to make a "clearance" (Figure 2, red arrow) before attempting a basket (Figure 2, blue arrow).</li>
+        <li>Each team can call a maximum of 3 timeouts during the game. Each timeout lasts 45 seconds.</li>
+    </ul>
+    </section id="definitions">
+    <section id="definitions">
+    <h2>Player Guidelines</h2>
+    <ul>
+        <li>Players must wear the same jersey colors, and captains must assign numbers to their team players.</li>
+        <li>Captains are advised to register their players using assigned numbers and appoint one player as the game captain.
+            <ul>
+                <li>The game captain can decide on rolling substitutions.</li>
+            </ul>
+        </li>
+        <li>Players must wear at least jogging shoes. Wearing wristwatches, smartwatches, necklaces, rosaries, wristbands, earrings, etc., is prohibited. Spectacles are allowed.</li>
+    </ul>
+    </section id="definitions">
+    <section id="definitions">
+    <h2>Gameplay Rules</h2>
+    <ul>
+        <li><b>Reaching Fouls:</b> Touching a player holding a ball is a foul, but touching the ball is allowed.</li>
+        <li><b>Pivot Rule:</b> A player holding the ball with both hands can only move one leg. Moving more than one step is a foul. The player can hold the ball for a maximum of 5 seconds.</li>
+        <li><b>Double Dribble:</b> Once a player starts dribbling and then holds the ball with both hands, they cannot dribble again but can pass the ball. Double hand dribbling is also a foul.</li>
+        <li>The dribbling player cannot elbow the opponent. Pushing is prohibited, but shoulder pushes while dribbling are allowed.</li>
+        <li>Each player is allowed 5 fouls. Upon the fifth foul, the player is disqualified, and the team captain must send a substitute.</li>
+    </ul>
+    </section id="definitions">
+    <section id="definitions">
+    <h2>Game Format</h2>
+    <ul>
+        <li>The game will be conducted in a knockout format as follows:
+            <ul>
+                <li>Game 1: Team A vs Team B</li>
+                <li>Game 2: Team C vs Team D</li>
+                <li>3rd Place Game: Loser of Game 1 vs Loser of Game 2</li>
+                <li>Finals: Winner of Game 1 vs Winner of Game 2</li>
+            </ul>
+        </li>
+        <li>The first-round matchups will be decided by a draw of lots.</li>
+        <li>The game will start with a jump ball or toss, depending on the situation.</li>
+    </ul>
+    </section id="definitions">
+    <section id="definitions">
+    <h2>Additional Notes</h2>
+    <p>The decision of the organizers will be final. For further clarification, feel free to reach out to the organizers.</p>
+    </section id="definitions">
+    <section id="definitions">
+    <h2>Figures</h2>
+    <div class="bask-image">
+        <img src="{{ url_for('static', filename='images/bask1.png') }}" alt="Badminton Court" width="50%" height="auto">
+
+    </div>
+    <footer class="amazon-footer">
+        <p>&copy; Sports Committee - IGIDR | All Rights Reserved</p>
+        <p><a href="{{ url_for('index') }}" class="home-link">Back to Home Page</a></p>
+    </footer>
+</body>
+</html>
+

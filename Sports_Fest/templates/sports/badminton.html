@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badminton Rules</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='sports.css') }}">
+
+</head>
+<body>
+    <header>
+        <h1>Badminton Rules</h1>
+        <nav>
+            <ul>
+                <li><a href="#court">Court</a></li>
+                <li><a href="#shuttle">Shuttle</a></li>
+                
+                
+               
+                <li><a href="#toss">Toss</a></li>
+                <li><a href="#scoring">Scoring</a></li>
+                <li><a href="#change-of-ends">Change of Ends</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#singles">Singles</a></li>
+                <li><a href="#doubles">Doubles</a></li>
+                <li><a href="#service-court-errors">Service Court Errors</a></li>
+                <li><a href="#faults">Faults</a></li>
+                <li><a href="#lets">Lets</a></li>
+                <li><a href="#shuttle-not-in-play">Shuttle Not in Play</a></li>
+                <li><a href="#continuous-play">Continuous Play, Misconduct, Penalties</a></li>
+                <li><a href="#official-and-appeals">Official and Appeals</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<section id="definitions">
+    <h2>Definitions</h2>
+    <p><strong>Player:</strong> Any person playing Badminton.</p>
+    <p><strong>Match:</strong> The basic contest in Badminton between opposing sides each of one or two players.</p>
+    <p><strong>Singles:</strong> A match where there is one player on each of the opposing sides.</p>
+    <p><strong>Doubles:</strong> A match where there are two players on each of the opposing sides.</p>
+    <p><strong>Serving Side:</strong> The side having the right to serve.</p>
+    <p><strong>Receiving Side:</strong> The side opposing the serving side.</p>
+    <p><strong>Rally:</strong> A sequence of one or more strokes starting with the service, until the shuttle ceases to be in play.</p>
+    <p><strong>Stroke:</strong> A movement of the player’s racket with an intention to hit the shuttle.</p>
+    <div class="court-image">
+        <img src="{{ url_for('static', filename='images/bad1.png') }}" alt="Badminton Court" width="20%" height="auto">
+    </div>
+</section>
+
+
+<section id="court">
+    <h2>Court and Court Equipment</h2>
+    <p><strong>1.1.</strong> The court shall be a rectangle marked out with lines 40 mm wide as shown in Diagram A.</p>
+    <p><strong>1.2.</strong> The lines marking out the court shall be easily distinguishable and preferably be coloured white or yellow.</p>
+    <p><strong>1.3.</strong> All the lines shall form part of the area which they define.</p>
+    <p><strong>1.4.</strong> The posts shall be 1.55 metres in height from the surface of the court and shall remain vertical when the net is strained as provided in Law 1.10.</p>
+    <p><strong>1.5.</strong> The posts shall be placed on the doubles side lines as in Diagram A irrespective of whether singles or doubles is being played. The posts or its supports shall not extend into the court beyond the side lines.</p>
+    <p><strong>1.6.</strong> The net will be provided by the sports committee and that shall only be in use.</p>
+
+    <p><strong>1.7.</strong> The cord or cable shall be stretched firmly, flush with the top of the posts.</p>
+    <p><strong>1.10.</strong> The top of the net from the surface of the court shall be 1.55 metres at the centre of the court.</p>
+
+</section>
+
+
+<section id="shuttle">
+    <h2>SHUTTLE</h2>
+    <p>The shuttle used will be Yonex 350 Blue/Red.</p>
+</section>
+
+
+<section id="toss">
+    <h2>TOSS</h2>
+    <p>6.1 Before play commences, a toss shall be conducted. The side winning the toss shall choose:</p>
+    <ul>
+        <li>6.1.1 To serve or receive first;</li>
+        <li>6.1.2 To start play at one end of the court or the other.</li>
+    </ul>
+    <p>6.2 The side losing the toss shall then exercise the remaining choice.</p>
+</section>
+
+
+<section id="scoring-system">
+    <h2>SCORING SYSTEM</h2>
+    <p>7.1 A match shall consist of the best of three games, unless otherwise arranged .</p>
+    <p>7.2 A game shall be won by the side which first scores 21 points.</p>
+    <p>7.3 The side winning a rally shall add a point to its score. A side shall win a rally if the opposing side commits a "fault" or the shuttle touches the surface inside the opponent's court.</p>
+    <p>7.4 If the score becomes 20-all, the side which gains a two-point lead first, shall win that game.</p>
+    <p>7.5 If the score becomes 29-all, the side scoring the 30th point shall win that game.</p>
+    <p>7.6 The side winning a game shall serve first in the next game.</p>
+</section>
+
+<section id="change-of-ends">
+    <h2>CHANGE OF ENDS</h2>
+    <p>8.1 Players shall change ends:</p>
+    <ul>
+        <li>8.1.1 At the end of the first game;</li>
+        <li>8.1.2 At the end of the second game, if there is to be a third game; and</li>
+        <li>8.1.3 In the third game when a side first scores 11 points.</li>
+
+    </ul>
+    <p>8.2 If the ends are not changed as indicated in Law 8.1, it shall be done as soon as the mistake is discovered and when the shuttle is not in play. The existing score shall stand.</p>
+</section>
+
+
+
+<section id="service">
+    <h2>SERVICE</h2>
+    
+    <p>9.1 In a correct service, the flight of the shuttle shall be upwards from the server's racket to pass over the net so that, if not intercepted, it shall land in the receiver's service court (i.e. on or within the boundary lines); and:</p>
+    <ul>
+        <li>9.1.1 Neither side shall cause undue delay to the delivery of the service once the server and the receiver are ready.</li>
+        <li>9.1.2 Any delay after the backward movement of the server's racket shall be considered undue delay.</li>
+        <li>9.1.3 The server and receiver shall stand within diagonally opposite service courts without touching the boundary lines.</li>
+        <li>9.1.4 Both feet of the server and receiver shall remain in contact with the surface in a stationary position until the service is delivered.</li>
+        <li>9.1.5 The server's racket shall initially hit the base of the shuttle.</li>
+        <li>9.1.6 The shuttle shall be below 1.15 meters from the surface when hit by the server’s racket.</li>
+        <li>9.1.7 The server's racket shall continue forwards until the service is delivered.</li>
+        <li>9.1.8 The server shall not miss the shuttle while attempting to serve.</li>
+    </ul>
+    <p>9.2 The first forward movement of the server's racket head shall mark the start of the service.</p>
+    <p>9.3 The service is delivered when the shuttle is hit by the server's racket or the server misses the shuttle.</p>
+    <p>9.4 The server shall not serve before the receiver is ready, but the receiver is considered ready if a return of service is attempted.</p>
+    <p>9.5 In doubles, partners may take up any positions within their courts, provided they do not unsight the opposing server or receiver during the delivery of service.</p>
+</section>
+
+<section id="singles">
+    <h2>SINGLES</h2>
+    <h3>10.1 Serving and Receiving Courts</h3>
+    <ul>
+        <li>10.1.1 Players serve from and receive in their respective right service courts when the server has not scored or has scored an even number of points.</li>
+        <li>10.1.2 Players serve from and receive in their respective left service courts when the server has scored an odd number of points.</li>
+    </ul>
+    
+    <h3>10.2 Order of Play and Position on Court</h3>
+    <p>In a rally, the shuttle may be hit alternately by the server and receiver, from any position on the player's side of the net, until it ceases to be in play.</p>
+
+    <h3>10.3 Scoring and Serving</h3>
+    <ul>
+        <li>10.3.1 If the server wins a rally, the server scores a point and serves again from the alternate service court.</li>
+        <li>10.3.2 If the receiver wins a rally, the receiver scores a point and becomes the new server.</li>
+    </ul>
+</section>
+
+<section id="doubles">
+    <h2>DOUBLES</h2>
+
+    <h3>11.1 Serving and Receiving Courts</h3>
+    <ul>
+        <li>11.1.1 A player serves from the right service court when the serving side has not scored or has scored an even number of points.</li>
+        <li>11.1.2 A player serves from the left service court when the serving side has scored an odd number of points.</li>
+        <li>11.1.3 The player of the receiving side who served last stays in the same service court; the reverse applies to their partner.</li>
+        <li>11.1.4 The player in the diagonally opposite service court to the server is the receiver.</li>
+        <li>11.1.5 Players do not change their service courts until they win a point while serving.</li>
+        <li>11.1.6 Service is delivered from the service court corresponding to the serving side's score.</li>
+    </ul>
+
+    <h3>11.2 Order of Play and Position on Court</h3>
+    <p>In a rally, the shuttle may be hit alternately by either player on each side from any position on their side of the net until the shuttle is no longer in play.</p>
+
+    <h3>11.3 Scoring and Serving</h3>
+    <ul>
+        <li>11.3.1 If the serving side wins a rally, they score a point and the server serves again from the alternate service court.</li>
+        <li>11.3.2 If the receiving side wins a rally, they score a point and become the new serving side.</li>
+    </ul>
+
+    <h3>11.4 Sequence of Serving</h3>
+    <p>The right to serve passes consecutively from the initial server to the partner of the initial receiver, the partner of the initial server, and so on.</p>
+
+    <h3>11.5 Service and Receiving Order</h3>
+    <p>No player shall serve or receive out of turn, or receive two consecutive services, except under special circumstances or misconduct.</p>
+
+    <h3>11.6 Next Game</h3>
+    <p>Either player of the winning side may serve first in the next game, and either player of the losing side may receive first.</p>
+</section>
+
+<section id="service-court-errors">
+    <h2>SERVICE COURT ERRORS</h2>
+
+    <p>12.1 A service court error has been made when a player:</p>
+    <ul>
+        <li>12.1.1 has served or received out of turn; or</li>
+        <li>12.1.2 has served or received from the wrong service court.</li>
+    </ul>
+
+    <p>12.2 If a service court error is discovered, the error shall be corrected when the shuttle is not in play, and the existing score shall stand.</p>
+</section>
+
+<section id="faults">
+    <h2>FAULTS</h2>
+    <p>It shall be a "fault":</p>
+    <ul>
+        <li>13.1 if a service is not correct (Law 9.1);</li>
+        <li>13.2 if, in service, the shuttle:</li>
+        <ul>
+            <li>13.2.1 is caught on the net and remains suspended on its top;</li>
+            <li>13.2.2 after passing over the net, is caught in the net;</li>
+            <li>13.2.3 is hit by the receiver's partner;</li>
+        </ul>
+        <li>13.3 if in play, the shuttle:</li>
+        <ul>
+            <li>13.3.1 lands outside the boundaries of the court;</li>
+            <li>13.3.2 fails to pass over the net;</li>
+            <li>13.3.3 touches the ceiling or side walls;</li>
+            <li>13.3.4 touches the person or dress of a player;</li>
+            <li>13.3.5 touches any other object or person outside the court;</li>
+            <li>13.3.6 is caught and held on the racket and then slung during the execution of a stroke;</li>
+            <li>13.3.7 is hit twice in succession by the same player;</li>
+            <li>13.3.8 is hit by a player and the player's partner successively;</li>
+            <li>13.3.9 touches a player's racket and does not travel towards the opponent's court;</li>
+            
+        </ul>
+        <li>13.4 if, in play, a player:</li>
+        <ul>
+            <li>13.4.1 touches the net or its supports with racket, person or dress;</li>
+            <li>13.4.2 invades an opponent's court over the net with racket or person;</li>
+            <li>13.4.3 invades an opponent's court under the net;</li>
+            <li>13.4.4 obstructs an opponent;</li>
+            <li>13.4.5 deliberately distracts an opponent;</li>
+        </ul>
+        <li>13.5 if a player is guilty of flagrant, repeated or persistent offences under Law 16;</li>
+    </ul>
+</section>
+
+<section id="lets">
+    <h2>LETS</h2>
+    <p>14.1 "Let" shall be called by the umpire, or by a player (if there is no umpire), to halt play.</p>
+    <p>14.2 It shall be a "let", if:</p>
+    <ul>
+        <li>14.2.1 the server serves before the receiver is ready (Law 9.4);</li>
+        <li>14.2.2 during service, the receiver and the server are both faulted;</li>
+        <li>14.2.3 after the service is returned, the shuttle is:</li>
+        <ul>
+            <li>14.2.3.1 caught on the net and remains suspended on its top;</li>
+            <li>14.2.3.2 after passing over the net is caught in the net;</li>
+        </ul>
+        <li>14.2.4 during play, the shuttle disintegrates and the base completely separates from the rest of the shuttle;</li>
+        <li>14.2.5 in the opinion of the umpire, play is disrupted or a player of the opposing side is distracted by a coach;</li>
+        <li>14.2.6 a line judge is unsighted and the umpire or Instant Review System is unable to make a decision;</li>
+        <li>14.2.7 any unforeseen or accidental situation has occurred.</li>
+    </ul>
+    <p>14.3 When a "let" occurs, play since the last service shall not count and the player who served last shall serve again.</p>
+</section>
+
+<section id="shuttle-not-in-play">
+    <h2>SHUTTLE NOT IN PLAY</h2>
+    <p>A shuttle is not in play when:</p>
+    <ul>
+        <li>15.1 it strikes the net or post and starts to fall towards the surface of the court on the striker's side of the net;</li>
+        <li>15.2 it hits the surface of the court;</li>
+        <li>15.3 a "fault" or a "let" has occurred.</li>
+    </ul>
+
+<section id="continuous-play">
+    <h2>CONTINUOUS PLAY, MISCONDUCT & PENALTIES</h2>
+    <ul>
+    <h3>16.1 Play shall be continuous, except during allowed intervals or suspension as per Laws 16.2 and 16.3.</h3>
+    
+    <h3>16.2 Intervals</h3>
+    
+        <li>16.2.1 Not exceeding 60 seconds when the score reaches 11 points.</li>
+        <li>16.2.2 Not exceeding 120 seconds between games.</li>
+        <li>Televised matches may have fixed interval durations.</li>
+    </ul>
+
+    <h3>16.3 Suspension of Play</h3>
+    <p>Play may be suspended by the umpire for external reasons or by the referee’s instruction, with the existing score standing.</p>
+
+    <h3>16.4 Delay in Play</h3>
+    <ul>
+        <li>16.4.1 Play cannot be delayed for recovery or advice.</li>
+        <li>16.4.2 The umpire judges any delay.</li>
+    </ul>
+
+    <h3>16.5 Advice and Leaving the Court</h3>
+    <ul>
+        <li>16.5.1 Advice can only be received when the shuttle is not in play.</li>
+        <li>16.5.2 Players cannot leave without umpire permission.</li>
+    </ul>
+
+    <h3>16.6 Player Misconduct</h3>
+    <ul>
+        <li>16.6.1 Deliberate delay or suspension of play.</li>
+        <li>16.6.2 Modifying the shuttle’s flight.</li>
+        <li>16.6.3 Offensive behavior or misconduct.</li>
+    </ul>
+
+    <h3>16.7 Administration of Breach</h3>
+    <ul>
+        <li>16.7.1 Umpire issues warnings or faults for breaches.</li>
+        <li>16.7.2 Serious breaches can lead to disqualification.</li>
+    </ul>
+</section>
+
+<section id="officials-appeals">
+    <h2>OFFICIALS AND APPEALS</h2>
+    
+    <p>17.1 The Referee oversees the tournament.</p>
+    <p>17.2 The umpire is in charge of the match and reports to the Referee.</p>
+    <p>17.3 The service judge calls service faults.</p>
+    <p>17.4 The line judge indicates whether the shuttle landed in or out.</p>
+    
+    
+    <p>17.5 Decisions by officials are final, but can be overruled in cases of clear error or with an Instant Review System in place.</p>
+    
+    <h3>17.6 Umpire Responsibilities</h3>
+    <ul>
+        <li>Enforce Laws of Badminton, call faults/lets.</li>
+        <li>Decide on appeals during a match.</li>
+        <li>Keep players and spectators informed.</li>
+        <li>Manage official appointments and report incidents to the Referee.</li>
+    </ul>
+</section>
+
+<footer class="amazon-footer">
+    <p>&copy; Sports Committee - IGIDR | All Rights Reserved</p>
+    <p><a href="{{ url_for('index') }}" class="home-link">Back to Home Page</a></p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrom Rules</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='sports.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Carrom Rules</h1>
+        <nav>
+            <ul>
+                <li><a href="#objective">Objective</a></li>
+                <li><a href="#setup">Setup</a></li>
+                <li><a href="#gameplay">Gameplay</a></li>
+                <li><a href="#scoring">Scoring</a></li>
+                <li><a href="#additional-rules">Additional Rules</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="objective">
+        <h2>Objective</h2>
+        <p>The primary objective is to pocket all your assigned carrom men (pieces) and the queen before your opponent does. The player who pockets all their carrom men and the queen wins the board.</p>
+    </section>
+
+    <section id="setup">
+        <h2>Setup</h2>
+        <ul>
+            <li><strong>Board Layout:</strong>
+                <ul>
+                    <li>The carrom board is a square wooden board with pockets in each corner.</li>
+                    <li>The board has a center circle where the pieces are placed during setup.</li>
+                </ul>
+            </li>
+            <li><strong>Pieces:</strong>
+                <ul>
+                    <li>9 white carrom men</li>
+                    <li>9 black carrom men</li>
+                    <li>1 red piece (Queen)</li>
+                    <li>1 striker (used to hit the pieces)</li>
+                </ul>
+            </li>
+            <li><strong>Arrangement:</strong> The carrom men are arranged in the center of the board in a specific pattern: the queen (red) in the center, surrounded by alternating white and black carrom men.</li>
+            <li><strong>Players:</strong> Carrom can be played as singles (2 players) or doubles (4 players in teams of 2).</li>
+        </ul>
+    </section>
+
+    <section id="gameplay">
+        <h2>Gameplay</h2>
+        <ul>
+            <li><strong>Turn Order:</strong>
+                <ul>
+                    <li>Players decide who goes first, often by a coin toss or by lagging the striker.</li>
+                    <li>The first player strikes from within the baseline (the line at the edge of the board).</li>
+                </ul>
+            </li>
+            <li><strong>Striking:</strong>
+                <ul>
+                    <li>Players must flick the striker with one finger to hit the carrom men.</li>
+                    <li>The striker must be placed within the baseline and flicked with precision.</li>
+                </ul>
+            </li>
+            <li><strong>Pocketing:</strong>
+                <ul>
+                    <li>A player continues their turn as long as they pocket their assigned carrom men.</li>
+                    <li>If no carrom men are pocketed, the turn passes to the opponent.</li>
+                </ul>
+            </li>
+            <li><strong>Queen Rules:</strong>
+                <ul>
+                    <li>The queen can be pocketed at any time but must be covered by pocketing one of your carrom men in the following turn.</li>
+                    <li>If the queen is not covered, it is returned to the center of the board.</li>
+                </ul>
+            </li>
+            <li><strong>Fouls:</strong>
+                <ul>
+                    <li>Pocketing the striker.</li>
+                    <li>Pocketing an opponent's carrom man.</li>
+                    <li>Failing to hit any carrom men with the striker.</li>
+                    <li>Penalty: One piece is returned to the board.</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section id="scoring">
+        <h2>Scoring</h2>
+        <ul>
+            <li><strong>Carrom Men:</strong> Each carrom man is worth 1 point.</li>
+            <li><strong>Queen:</strong> The queen is worth 3 points but must be covered by pocketing one of your carrom men in the next turn.</li>
+            <li><strong>Winning:</strong> The first player to reach 25 points (or a predetermined score) wins the game.</li>
+        </ul>
+    </section>
+
+    <section id="additional-rules">
+        <h2>Additional Rules</h2>
+        <ul>
+            <li><strong>Covering the Queen:</strong> If a player pockets the queen but fails to cover it in the next turn, the queen is returned to the center of the board.</li>
+            <li><strong>Penalties:</strong> Fouls result in a penalty, often the return of a previously pocketed carrom man to the center of the board.</li>
+            <li><strong>Rearranging Coins:</strong> If the pieces get disturbed or go out of position, they are returned to their original positions.</li>
+            <li><strong>Time Limit:</strong> Each player is usually given a specific time (e.g., 10 seconds) to take their shot.</li>
+        </ul>
+    </section>
+
+    <footer class="amazon-footer">
+        <p>&copy; Sports Committee - IGIDR | All Rights Reserved</p>
+        <p><a href="{{ url_for('index') }}" class="home-link">Back to Home Page</a></p>
+    </footer>
+</body>
+</html>

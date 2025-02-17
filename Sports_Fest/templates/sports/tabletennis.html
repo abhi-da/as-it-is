@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Tennis Rules</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='sports.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Table Tennis Rules</h1>
+        <nav>
+            <ul>
+                <li><a href="#objective">Objective</a></li>
+                <li><a href="#setup">Setup</a></li>
+                <li><a href="#gameplay">Gameplay</a></li>
+                <li><a href="#scoring">Scoring</a></li>
+                <li><a href="#additional-rules">Additional Rules</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="objective">
+        <h2>Objective</h2>
+        <p>The objective of table tennis is to score points by hitting the ball over the net onto the opponent's side of the table in such a way that the opponent cannot make a valid return. The player or team that wins the most games wins the match.</p>
+    </section>
+
+    <section id="setup">
+        <h2>Setup</h2>
+        <ul>
+            <li><strong>Table:</strong>
+                <ul>
+                    <li>The table measures 2.74 meters in length, 1.525 meters in width, and stands 76 centimeters high.</li>
+                    <li>A vertical net divides the table into two equal halves.</li>
+                </ul>
+            </li>
+            <li><strong>Net:</strong>
+                <ul>
+                    <li>The net assembly, including the posts, is 15.25 centimeters high and extends across the full width of the table.</li>
+                </ul>
+            </li>
+            <li><strong>Ball:</strong>
+                <ul>
+                    <li>The ball is made of celluloid or similar plastic material, has a diameter of 40mm, and weighs 2.7 grams.</li>
+                </ul>
+            </li>
+            <li><strong>Paddles (Rackets):</strong>
+                <ul>
+                    <li>Paddles are made of wood, covered with rubber on one or both sides, and must meet official size and material specifications.</li>
+                </ul>
+            </li>
+            <li><strong>Players:</strong>
+                <ul>
+                    <li>Table tennis can be played in singles (2 players) or doubles (4 players, 2 per team).</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section id="gameplay">
+        <h2>Gameplay</h2>
+        <ul>
+            <li><strong>Serve:</strong>
+                <ul>
+                    <li>The ball must be tossed vertically at least 16 centimeters and struck so it bounces once on the server's side and once on the opponent's side.</li>
+                    <li>In doubles, the serve must travel diagonally from the server's right-hand side to the receiver's right-hand side.</li>
+                    <li>After every 2 points, the serve switches to the opponent. At deuce (10-10), the serve alternates after every point.</li>
+                </ul>
+            </li>
+            <li><strong>Rally:</strong>
+                <ul>
+                    <li>Players must return the ball after it bounces once on their side, ensuring it clears the net and lands on the opponent's side.</li>
+                    <li>The rally continues until a player fails to make a valid return or commits a fault.</li>
+                </ul>
+            </li>
+            <li><strong>Let:</strong>
+                <ul>
+                    <li>A let is called if the serve touches the net but lands correctly in the service area. The serve is replayed.</li>
+                    <li>Let is also called if play is interrupted by external factors.</li>
+                </ul>
+            </li>
+            <li><strong>Faults:</strong>
+                <ul>
+                    <li>Failing to make a valid serve (e.g., missing the table, not tossing the ball correctly).</li>
+                    <li>Hitting the ball out of bounds or into the net.</li>
+                    <li>Allowing the ball to bounce more than once on your side.</li>
+                    <li>Touching the table with your free hand or moving the table during play.</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section id="scoring">
+        <h2>Scoring</h2>
+        <ul>
+            <li><strong>Points:</strong>
+                <ul>
+                    <li>A point is scored when the opponent fails to make a valid return, commits a fault, or allows the ball to bounce more than once.</li>
+                </ul>
+            </li>
+            <li><strong>Game:</strong>
+                <ul>
+                    <li>A game is played to 11 points, but a player must win by at least 2 points.</li>
+                    <li>If the score reaches 10-10, known as "deuce," players continue playing until one player leads by 2 points.</li>
+                </ul>
+            </li>
+            <li><strong>Match:</strong>
+                <ul>
+                    <li>A match is typically the best of 5 or 7 games. The player or team that wins the majority of games wins the match.</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section id="additional-rules">
+        <h2>Additional Rules</h2>
+        <ul>
+            <li><strong>Service Rotation:</strong>
+                <ul>
+                    <li>In doubles, players alternate serves every 2 points. After each game, teams switch sides and change the serving order.</li>
+                    <li>During rallies in doubles, teammates must alternate hitting the ball.</li>
+                </ul>
+            </li>
+            <li><strong>Timeouts:</strong>
+                <ul>
+                    <li>Each player or team is allowed one 1-minute timeout per game.</li>
+                </ul>
+            </li>
+            <li><strong>Expedite System:</strong>
+                <ul>
+                    <li>If a game lasts more than 10 minutes (unless both players have 9 points), the expedite system is activated.</li>
+                    <li>Under this system, players alternate serves every point, and the receiver automatically wins the point if they return the ball 13 times without the server winning the point.</li>
+                </ul>
+            </li>
+            <li><strong>Clothing and Equipment:</strong>
+                <ul>
+                    <li>Players must wear clothing that contrasts with the ball color to ensure visibility.</li>
+                    <li>Non-reflective clothing is required to prevent distractions.</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <footer class="amazon-footer">
+        <p>&copy; Sports Committee - IGIDR | All Rights Reserved</p>
+        <p><a href="{{ url_for('index') }}" class="home-link">Back to Home Page</a></p>
+    </footer>
+</body>
+</html>

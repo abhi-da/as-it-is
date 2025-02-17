@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kho-Kho Game Rules</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='sports.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Kho-Kho Game Rules</h1>
+    </header>
+    <section id="overview">
+        <h2>Game Overview</h2>
+        <p>Kho-Kho is played between two teams, each consisting of 5 players. The game involves two innings, each lasting 9 minutes, which includes both chasing and running.</p>
+    </section>
+    <section id="team-setup">
+        <h2>Team Setup</h2>
+        <ul>
+            <li>Each team has 5 players.</li>
+            <li>The game consists of two innings.</li>
+        </ul>
+    </section>
+    <section id="chasing">
+        <h2>Chasing Rules</h2>
+        <ul>
+            <li>The chasing team sits or kneels in the middle of the court in a row, with each player facing opposite sides alternately.</li>
+            <li>The chaser must touch the nearest possible player on the back and say "Kho" to allow them a chance to chase.</li>
+            <li>The team that takes the shortest amount of time to touch the player being chased wins.</li>
+        </ul>
+    </section>
+    <section id="turns">
+        <h2>Turns</h2>
+        <ul>
+            <li>The runner or chaser is decided by a toss.</li>
+            <li>The captain of the chasing side may end the turn before the allotted time.</li>
+            <li>If a chaser touches both runners, two new runners from the entry zone enter the field.</li>
+        </ul>
+    </section>
+    <section id="fouls">
+        <h2>Fouls</h2>
+        <ul>
+            <li>Fouls include early Kho, touching without saying Kho, changing direction while chasing, cutting the cross lane, getting up without receiving a Kho, or late Kho.</li>
+        </ul>
+    </section>
+    <section id="tie-breaker">
+        <h2>Tie Breaker</h2>
+        <p>If there is a tie, an extra turn is performed. The winner of the extra turn is the team that touches one runner from the opposite team in the shortest time.</p>
+    </section>
+
+
+    <footer class="amazon-footer">
+        <p>&copy; Sports Committee - IGIDR | All Rights Reserved</p>
+        <p><a href="{{ url_for('index') }}" class="home-link">Back to Home Page</a></p>
+    </footer>
+</body>
+</html>
+
+

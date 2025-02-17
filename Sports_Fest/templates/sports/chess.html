@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Rules</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='sports.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Chess Rules</h1>
+        <nav>
+            <ul>
+                <li><a href="#objective">Objective</a></li>
+                <li><a href="#setup">Setup</a></li>
+                <li><a href="#pieces">Pieces and Movements</a></li>
+                <li><a href="#special-moves">Special Moves</a></li>
+                <li><a href="#gameplay">Gameplay</a></li>
+                <li><a href="#endgame">Endgame and Scoring</a></li>
+                <li><a href="#additional-rules">Additional Rules</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="objective">
+        <h2>Objective</h2>
+        <p>The objective of chess is to checkmate your opponent's king. Checkmate occurs when the king is in a position to be captured (in check) and there is no legal move to escape the threat.</p>
+    </section>
+
+    <section id="setup">
+        <h2>Setup</h2>
+        <ul>
+            <li>The chessboard is an 8x8 grid with alternating light and dark squares.</li>
+            <li>Each player starts with 16 pieces: 1 king, 1 queen, 2 rooks, 2 bishops, 2 knights, and 8 pawns.</li>
+            <li>The board is set up so that each player has a white square on their right-hand side.</li>
+            <li>Pawns are placed on the second row; rooks on the corners, knights next to rooks, bishops next to knights, the queen on her matching color, and the king on the remaining square.</li>
+        </ul>
+    </section>
+
+    <section id="pieces">
+        <h2>Pieces and Movements</h2>
+        <ul>
+            <li><strong>King:</strong> Moves one square in any direction.</li>
+            <li><strong>Queen:</strong> Moves any number of squares in any direction (vertically, horizontally, or diagonally).</li>
+            <li><strong>Rook:</strong> Moves any number of squares vertically or horizontally.</li>
+            <li><strong>Bishop:</strong> Moves any number of squares diagonally.</li>
+            <li><strong>Knight:</strong> Moves in an L-shape: two squares in one direction and then one square perpendicular. Knights can jump over other pieces.</li>
+            <li><strong>Pawn:</strong> Moves forward one square but captures diagonally. On its first move, a pawn can move forward two squares.</li>
+        </ul>
+    </section>
+
+    <section id="special-moves">
+        <h2>Special Moves</h2>
+        <ul>
+            <li><strong>Castling:</strong>
+                <ul>
+                    <li>A move involving the king and either rook. The king moves two squares towards the rook, and the rook moves to the square next to the king. Conditions:
+                        <ul>
+                            <li>Neither the king nor the rook has moved before.</li>
+                            <li>No pieces between the king and rook.</li>
+                            <li>The king is not in check, does not move through check, or end in check.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><strong>En Passant:</strong>
+                <ul>
+                    <li>If a pawn moves two squares forward from its starting position and lands beside an opponent's pawn, the opponent can capture it as if it moved only one square forward.</li>
+                </ul>
+            </li>
+            <li><strong>Pawn Promotion:</strong>
+                <ul>
+                    <li>When a pawn reaches the opposite end of the board, it can be promoted to any other piece (except a king), typically a queen.</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section id="gameplay">
+        <h2>Gameplay</h2>
+        <ul>
+            <li>White moves first, and players alternate turns.</li>
+            <li>A player must move if they have a legal move available.</li>
+            <li>Pieces capture by moving into a square occupied by an opponent's piece.</li>
+            <li><strong>Check:</strong> When a king is under threat of capture, it must be moved out of check, the threatening piece must be captured, or a piece must be placed in between.</li>
+        </ul>
+    </section>
+
+    <section id="endgame">
+        <h2>Endgame and Scoring</h2>
+        <ul>
+            <li><strong>Checkmate:</strong> The game ends when a player's king is checkmated.</li>
+            <li><strong>Stalemate:</strong> The game is a draw if a player has no legal moves, and their king is not in check.</li>
+            <li><strong>Draw:</strong> The game can also end in a draw by mutual agreement, insufficient material to checkmate, threefold repetition, or the fifty-move rule (no pawn move or capture in 50 consecutive moves).</li>
+            <li><strong>Scoring:</strong> In tournaments, a win scores 1 point, a draw scores 0.5 points, and a loss scores 0 points.</li>
+        </ul>
+    </section>
+
+    <section id="additional-rules">
+        <h2>Additional Rules</h2>
+        <ul>
+            <li><strong>Touch-Move Rule:</strong> If a player touches a piece, they must move it if it has a legal move.</li>
+            <li><strong>Illegal Moves:</strong> Making an illegal move can result in penalties or loss, depending on the rules of the tournament.</li>
+            <li><strong>Time Controls:</strong> In timed games, players must make their moves within a set time. Failure to do so results in a loss.</li>
+            <li><strong>Notation:</strong> Players often record their moves using algebraic notation, especially in tournaments.</li>
+        </ul>
+    </section>
+
+    <footer class="amazon-footer">
+        <p>&copy; Sports Committee - IGIDR | All Rights Reserved</p>
+        <p><a href="{{ url_for('index') }}" class="home-link">Back to Home Page</a></p>
+    </footer>
+</body>
+</html>

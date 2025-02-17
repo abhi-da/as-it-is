@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lawn Tennis Game Rules</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='sports.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Lawn Tennis Game Rules</h1>
+    </header>
+    <section id="set-rules">
+        <h2>Set Rules</h2>
+        <ul>
+            <li>Each set is played for a maximum of 3 games a side, with a standard tie-break if the score reaches 3-3.</li>
+        </ul>
+    </section>
+    <section id="timing">
+        <h2>Timing Rules</h2>
+        <ul>
+            <li>15 seconds gap between the first and second serve.</li>
+            <li>25 seconds gap between two serves.</li>
+            <li>90 seconds gap between changeovers.</li>
+            <li>5 minutes toilet break if needed (only one).</li>
+            <li>5 minutes medical time-out if needed (only one).</li>
+        </ul>
+    </section>
+    <section id="court-switch">
+        <h2>Court Switching</h2>
+        <ul>
+            <li>Players or teams switch ends of the court on odd games. This means they switch sides after the first game, and after every two games thereafter.</li>
+        </ul>
+    </section>
+    <section id="violations">
+        <h2>Code Violations</h2>
+        <ul>
+            <li>Code violations will be followed as per standard ATP and WTA norms.</li>
+        </ul>
+    </section>
+    <section id="other-rules">
+        <h2>Other Rules</h2>
+        <ul>
+            <li>All other standard rules set by ATP and WTA apply.</li>
+        </ul>
+    </section>
+
+
+
+    <footer class="amazon-footer">
+        <p>&copy; Sports Committee - IGIDR | All Rights Reserved</p>
+        <p><a href="{{ url_for('index') }}" class="home-link">Back to Home Page</a></p>
+    </footer>
+</body>
+</html>
+
+

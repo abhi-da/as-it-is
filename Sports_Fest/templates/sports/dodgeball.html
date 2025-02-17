@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dodgeball Game Rules</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='sports.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Dodgeball Game Rules</h1>
+    </header>
+    <section id="overview">
+        <h2>Game Overview</h2>
+        <p>The team that survives each round or has the most players left after each round wins. Each round lasts 10 minutes, and there are specific rules for crossing lines and eliminating players.</p>
+    </section>
+    <section id="team-setup">
+        <h2>Team Setup</h2>
+        <ul>
+            <li>Each team consists of 7 players.</li>
+            <li>At any time, there will be 5 players on the court from each team.</li>
+            <li>When a player gets hit, another player from the team can replace them.</li>
+            <li>The player who is out must stand on the other side and cannot mix with other members before the end of the round.</li>
+        </ul>
+    </section>
+    <section id="rounds">
+        <h2>Rounds</h2>
+        <ul>
+            <li>There are 3 rounds in the semifinal and third place matches.</li>
+            <li>The final match will consist of 5 rounds.</li>
+            <li>Each round lasts 10 minutes.</li>
+            <li>The first line can be crossed after 4 minutes, and the second line after 7 minutes.</li>
+        </ul>
+    </section>
+    <section id="ball-throws">
+        <h2>Ball Throws</h2>
+        <ul>
+            <li>Each team gets to throw when the ball is in or behind their court.</li>
+            <li>The first thrower in each set is decided by a coin toss.</li>
+            <li>Players cannot hold the ball for too long. If the referee determines time-wasting, the ball will be passed to the other team.</li>
+        </ul>
+    </section>
+    <section id="elimination">
+        <h2>Elimination Rules</h2>
+        <ul>
+            <li>A player is eliminated if the ball thrown from behind the attack line hits them.</li>
+            <li>Any throw above the shoulder while the opponent is standing results in elimination.</li>
+            <li>If an opponent catches your throw, you are eliminated.</li>
+            <li>If you cross or touch the attack line while throwing the ball, you are eliminated.</li>
+            <li>If you cross or touch the boundary while dodging, you are eliminated.</li>
+            <li>If you leave the court for any reason or throw a ball from outside the court, you are eliminated.</li>
+        </ul>
+    </section>
+    <section id="court-rules">
+        <h2>Court Rules</h2>
+        <ul>
+            <li>Players must remain within the court at all times, unless collecting dead balls.</li>
+            <li>Players can leave the court to collect balls, but cannot throw the ball until they are back in the court.</li>
+        </ul>
+    </section>
+    <section id="disputes">
+        <h2>Dispute Resolution</h2>
+        <p>In case of any dispute, the organizing committee will refer to standard dodgeball rules. For game-specific details, please refer to the official dodgeball rules <a href="https://web.mst.edu/~ima/Rules/dodgeballrules.html" target="_blank">here</a>.</p>
+    </section>
+
+    <section id="playing-area">
+        <h2>Playing Area</h2>
+            <div class="court-image">
+        <img src="{{ url_for('static', filename='images/dodgeball.png') }}" alt="Dodgeball Court" width="50%" height="auto">
+    </div>
+    </section>
+
+
+    <footer class="amazon-footer">
+        <p>&copy; Sports Committee - IGIDR | All Rights Reserved</p>
+        <p><a href="{{ url_for('index') }}" class="home-link">Back to Home Page</a></p>
+    </footer>
+</body>
+</html>
+

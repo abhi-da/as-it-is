@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badminton Rules</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='rule.css') }}">
+</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tug of War Game Rules</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='sports.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Tug of War Game Rules</h1>
+    </header>
+    <section id="team-setup">
+        <h2>Team Setup</h2>
+        <ul>
+            <li>The game is played with 8 members from each house in a mixed event.</li>
+        </ul>
+    </section>
+    <section id="winning-conditions">
+        <h2>Winning Conditions</h2>
+        <ul>
+            <li>The team that crosses the 3-meter marker wins the game.</li>
+            <li>The game is played in a best-of-3 format.</li>
+        </ul>
+    </section>
+    <section id="rope-rules">
+        <h2>Rope and Pulling Rules</h2>
+        <ul>
+            <li>The center of the rope must be directly above the mark at the start of the game.</li>
+            <li>The rope must be pulled underarm, and no player's elbow can go below the knee; otherwise, a foul will be called.</li>
+        </ul>
+    </section>
+    <section id="cautions">
+        <h2>Cautions and Fouls</h2>
+        <ul>
+            <li>If a team member falls, they receive a caution. Each team is allowed two cautions before disqualification.</li>
+            <li>Touching the ground for too long is considered a foul.</li>
+        </ul>
+    </section>
+    <section id="equipment">
+        <h2>Equipment</h2>
+        <ul>
+            <li>No cleats or gloves are allowed during the event.</li>
+            <li>No anchoring or looping around the end of the rope is permitted.</li>
+        </ul>
+    </section>
+
+
+
+    <footer class="amazon-footer">
+        <p>&copy; Sports Committee - IGIDR | All Rights Reserved</p>
+        <p><a href="{{ url_for('index') }}" class="home-link">Back to Home Page</a></p>
+    </footer>
+</body>
+</html>
+
+
