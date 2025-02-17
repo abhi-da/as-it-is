@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team 1 Squad</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='team2.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Keynesian Kings Squad</h1>
+    </header>
+
+    <main>
+        <h2>Players List</h2>
+        <ul>
+            {% for player in players %}
+                <li>{{ player }}</li>  <!-- Display each player's name -->
+            {% endfor %}
+        </ul>
+        <p><a href="/team-information">Back to Team Information</a></p>
+
+
+    </main>
+</body>
+</html>
+

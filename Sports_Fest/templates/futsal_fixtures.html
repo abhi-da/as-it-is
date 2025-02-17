@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futsal Fixtures</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='fixtures.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>Futsal Fixtures</h1>
+    <div class="category-section">
+        <h2>Male Category</h2>
+
+    
+    <!-- Semi Finals Section -->
+    <div class="category-card">
+        <h2>Semi Finals</h2>
+        <ul class="sports-list">
+            <li><strong>Match 1:</strong> Semi Final 1 - Keynesian Kings vs Pareto Predators</li>
+            <li><strong>Match 2:</strong> Semi Final 2 - Marxist Monsters vs Adam's Army</li>
+        </ul>
+    </div>
+
+    <!-- Final Section -->
+    <div class="category-card">
+        <h2>Final</h2>
+        <ul class="sports-list">
+            <li><strong>Match 3:</strong> Winner of Semi Final 1 vs Winner of Semi Final 2</li>
+        </ul>
+    </div>
+
+    <!-- Third Place Section -->
+    <div class="category-card">
+        <h2>Third Place</h2>
+        <ul class="sports-list">
+            <li><strong>Match 4:</strong> Loser of Semi Final 1 vs Loser of Semi Final 2</li>
+        </ul>
+    </div>
+    <div class="category-section">
+        <h2>Female Category</h2>
+
+        <!-- Semi Finals -->
+        <div class="category-card">
+            <h3>Finals</h3>
+            <ul class="sports-list">
+                <li><strong>The Final:</strong> Adam's Army + Keynesian Kings VS Pareto Predators + Marxist Monsters</li>
+                
+            </ul>
+        </div>
+
+
+</div>
+
+<footer class="amazon-footer">
+    <p>&copy; Sports Committee - IGIDR | All Rights Reserved</p>
+    <p><a href="{{ url_for('index') }}" class="home-link">Back to Home Page</a></p>
+</footer>
+
+</body>
+</html>
+
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='results.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>Results</h1>
+
+    {% if results %}
+        <div class="results-list">
+            {% for result in results %}
+                <div class="result-card">
+                    <div class="result-header">
+                        <h2>{{ result[6] }}</h2>  <!-- Assuming this is the event title -->
+                        <p class="match-type">{{ result[1] }}</p>  <!-- Assuming this is match type -->
+                    </div>
+                    <div class="result-details">
+                        <p>{{ result[2] }}</p>  <!-- Assuming this is date or venue -->
+                    </div>
+                    <div class="match-teams">   
+                        <h2>{{ result[4] }} vs {{ result[3] }}</h2>  <!-- Assuming team names -->
+                    </div>
+                    <div class="result-footer">
+                        <p class="match-result">
+                            {% if result[5] %}{{ result[5] }}{% else %}Result pending{% endif %}
+                        </p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <p class="no-results">No results available.</p>
+    {% endif %}
+</div>
+
+<footer class="amazon-footer">
+    <p>&copy; Sports Committee - IGIDR | All Rights Reserved</p>
+    <p><a href="{{ url_for('index') }}" class="home-link">Back to Home Page</a></p>
+</footer>
+
+</body>
+</html>

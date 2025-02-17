@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Fest</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <h1>SYNERGY</h1>
+        <p>Annual Sports meet 2025</p>
+    </header>
+
+    <nav>
+        <!-- Hamburger Button -->
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            <span class="menu-icon"></span>
+            <span class="menu-icon"></span>
+            <span class="menu-icon"></span>
+        </button>
+
+        <!-- Menu List -->
+        <ul class="menu">
+            <li><a href="/announcements">Announcements</a></li>
+            <li><a href="/fixtures">Fixtures</a></li>
+            <li><a href="/schedule">Schedule</a></li>
+            <li><a href="/team-information">Team Information</a></li>
+            <li><a href="/results">Results</a></li>
+            <li><a href="/medal-tally">Medal Tally</a></li>
+            <li><a href="/misc">Misc</a></li>
+            <li><a href="/rule">Rule Book</a></li>
+
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Welcome to the Sports Fest</h2>
+        <p>Sports Fest to begin from 1st Februrary!</p>
+        <p>Check Announcement tab for necesaary announcements</p>
+    </main>
+
+    <footer>
+        <p>&copy; Sports Committee- IGIDR. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Toggle the navigation menu for mobile
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.menu').classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ team_name }} Squad</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/team_page.css') }}">
+</head>
+<body>
+    <header>
+        <h1>{{ team_name }} Squad</h1>
+    </header>
+    <div>
+        <h2>Squad Members:</h2>
+        <ul>
+            {% for player in squad %}
+                <li>{{ player['player_name'] }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    <footer>
+        <p>&copy; 2025 College Sports Fest. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

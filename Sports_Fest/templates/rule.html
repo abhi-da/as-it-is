@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rule Book</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='rule.css') }}">
+</head>
+<body>
+    <header class="amazon-header">
+        <h1>Rule Book</h1>
+        <p>E-Handbook of rules for each game!</p>
+        <p>The Results of Refree will be final in every case!</p>
+    </header>
+
+    <main class="rules-container">
+        <section class="rules-card">
+            <h2 class="sports"><a href="{{ url_for('sports_page', sport_name='badminton') }}">Badminton</a></h2>
+            <p><a href="{{ url_for('sports_page', sport_name='badminton') }}" class="view-rules">View Rules</a></p>
+        </section>
+
+        <section class="rules-card">
+            <h2 class="sports"><a href="{{ url_for('sports_page', sport_name='basketball') }}">Basketball</a></h2>
+            <p><a href="{{ url_for('sports_page', sport_name='basketball') }}" class="view-rules">View Rules</a></p>
+        </section>
+
+        <section class="rules-card">
+            <h2 class="sports"><a href="{{ url_for('sports_page', sport_name='carrom') }}">Carrom</a></h2>
+            <p><a href="{{ url_for('sports_page', sport_name='carrom') }}" class="view-rules">View Rules</a></p>
+        </section>
+
+        <section class="rules-card">
+            <h2 class="sports"><a href="{{ url_for('sports_page', sport_name='chess') }}">Chess</a></h2>
+            <p><a href="{{ url_for('sports_page', sport_name='chess') }}" class="view-rules">View Rules</a></p>
+        </section>
+
+        <section class="rules-card">
+            <h2 class="sports"><a href="{{ url_for('sports_page', sport_name='cricket') }}">Cricket</a></h2>
+            <p><a href="{{ url_for('sports_page', sport_name='cricket') }}" class="view-rules">View Rules</a></p>
+        </section>
+
+        <section class="rules-card">
+            <h2 class="sports"><a href="{{ url_for('sports_page', sport_name='dodgeball') }}">Dodgeball</a></h2>
+            <p><a href="{{ url_for('sports_page', sport_name='dodgeball') }}" class="view-rules">View Rules</a></p>
+        </section>
+
+        <section class="rules-card">
+            <h2 class="sports"><a href="{{ url_for('sports_page', sport_name='futsal') }}">Futsal</a></h2>
+            <p><a href="{{ url_for('sports_page', sport_name='futsal') }}" class="view-rules">View Rules</a></p>
+        </section>
+
+        <section class="rules-card">
+            <h2 class="sports"><a href="{{ url_for('sports_page', sport_name='khokho') }}">Kho-Kho</a></h2>
+            <p><a href="{{ url_for('sports_page', sport_name='khokho') }}" class="view-rules">View Rules</a></p>
+        </section>
+
+        <section class="rules-card">
+            <h2 class="sports"><a href="{{ url_for('sports_page', sport_name='lawntennis') }}">Lawn Tennis</a></h2>
+            <p><a href="{{ url_for('sports_page', sport_name='lawntennis') }}" class="view-rules">View Rules</a></p>
+        </section>
+
+        <section class="rules-card">
+            <h2 class="sports"><a href="{{ url_for('sports_page', sport_name='tabletennis') }}">Table Tennis</a></h2>
+            <p><a href="{{ url_for('sports_page', sport_name='tabletennis') }}" class="view-rules">View Rules</a></p>
+        </section>
+
+        <section class="rules-card">
+            <h2 class="sports"><a href="{{ url_for('sports_page', sport_name='volleyball') }}">Volleyball</a></h2>
+            <p><a href="{{ url_for('sports_page', sport_name='volleyball') }}" class="view-rules">View Rules</a></p>
+        </section>
+
+        <section class="rules-card">
+            <h2 class="sports"><a href="{{ url_for('sports_page', sport_name='tugofwar') }}">Tug of War</a></h2>
+            <p><a href="{{ url_for('sports_page', sport_name='tugofwar') }}" class="view-rules">View Rules</a></p>
+        </section>
+    </main>
+
+    <footer class="amazon-footer">
+        <p>&copy; Sports Committee - IGIDR | All Rights Reserved</p>
+        <p><a href="{{ url_for('home') }}" class="home-link">Back to Home Page</a></p>
+    </footer>
+</body>
+</html>

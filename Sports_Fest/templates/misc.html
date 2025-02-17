@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opt Out Form</title>
+    <link rel="stylesheet" href="static/misc.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Opt Out Form</h1>
+        </header>
+        
+        <!-- Registration Form -->
+        <form action="/submit" method="POST" class="registration-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="batch">Batch:</label>
+                <input type="text" id="batch" name="batch" required>
+            </div>
+
+            <div class="form-group">
+                <label for="team-name">Team Name:</label>
+                <input type="text" id="team-name" name="team-name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="individual-sport">Individual Sport (not playing):</label>
+                <input type="text" id="individual-sport" name="individual-sport" required>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+
+        <section class="registrations">
+            <h2>Opt Outs</h2>
+            <ul>
+                {% for registration in registrations %}
+                    <li>
+                        <span><strong>Name:</strong> {{ registration.name }} | <strong>Batch:</strong> {{ registration.batch }} | <strong>Team:</strong> {{ registration.teamName }} | <strong>Sport:</strong> {{ registration.individualSport }}</span>
+                    </li>
+                {% endfor %}
+            </ul>
+        </section>
+    </div>
+
+<footer class="amazon-footer">
+    <p>&copy; Sports Committee - IGIDR | All Rights Reserved</p>
+    <p><a href="{{ url_for('index') }}" class="home-link">Back to Home Page</a></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medal Tally</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='medal.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🏅 Medal Tally</h1>
+
+        {% if medal %}
+        <table>
+            <thead>
+                <tr>
+                    <th>Team</th>
+                    <th>🥇 Gold</th>
+                    <th>🥈 Silver</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in medal %}
+                <tr>
+                    <td class="team-name">{{ row['team'] }}</td>
+                    <td class="gold">{{ row['gold'] }}</td>
+                    <td class="silver">{{ row['silver'] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% else %}
+        <p class="no-data">No medal data available.</p>
+        {% endif %}
+    </div>
+</body>
+</html>
+

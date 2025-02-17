@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Information</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='team_information.css') }}">
+</head>
+<body>
+    <header class="amazon-header">
+        <h1>Team Information</h1>
+        <p>Explore the teams and their captains!</p>
+    </header>
+
+    <main class="team-cards-container">
+        <div class="team-card">
+            <h2 class="team-name"><a href="/team1.html">ADAM'S ARMY</a></h2>
+            <div class="team-captain">
+                <img src="static/images/player1.jpg" alt="Team 1 Captain">
+            </div>
+            <p><a href="/team1.html" class="view-squad-link">View Squad</a></p>
+        </div>
+
+        <div class="team-card">
+            <h2 class="team-name"><a href="/team2.html">KEYNESIAN KINGS</a></h2>
+            <div class="team-captain">
+                <img src="static/images/player2.jpg" alt="Team 2 Captain">
+            </div>
+            <p><a href="/team2.html" class="view-squad-link">View Squad</a></p>
+        </div>
+
+        <div class="team-card">
+            <h2 class="team-name"><a href="/team3.html">PARETO PREDATORS</a></h2>
+            <div class="team-captain">
+                <img src="static/images/player3.png" alt="Team 3 Captain">
+            </div>
+            <p><a href="/team3.html" class="view-squad-link">View Squad</a></p>
+        </div>
+
+        <div class="team-card">
+            <h2 class="team-name"><a href="/team4.html">MARXIST MONSTERS</a></h2>
+            <div class="team-captain">
+                <img src="static/images/player5.jpg" alt="Team 4 Captain">
+            </div>
+            <p><a href="/team4.html" class="view-squad-link">View Squad</a></p>
+        </div>
+
+
+    </main>
+
+    <footer class="amazon-footer">
+        <p>&copy; Sports Committee - IGIDR | All Rights Reserved</p>
+        <p><a href="{{ url_for('index') }}" class="home-link">Back to Home Page</a></p>
+    </footer>
+</body>
+</html>

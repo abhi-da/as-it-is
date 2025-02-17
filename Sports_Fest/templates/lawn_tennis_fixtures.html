@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lawn Tennis Fixtures</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='fixated.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Lawn Tennis Fixtures</h1>
+        </header>
+
+        <!-- Round of 32 heading and note -->
+        <section class="round-note">
+            <h2>Round of 32 (Male) and Round of 16 (Female)</h2>
+            <p><strong>Note:</strong> Those who have matches with hypothetical players will automatically progress to the next round. Matches for the next round will be fixed like: Winner of Match "I" vs Winner of Match "I+1", where I starts from 1. For example, in Round of 16, a match will be between the winner of Match 1 in Round of 32 and the winner of Match 2 in Round of 32.</p>
+            <p><strong>Note: Team A is Marxist Monster (Raveendra), Team B is Keynesian Kings (Manjesh), Team C is Pareto Predators (Subhankar) and Team D is Adam's Army (Salil) </strong>
+        </section>
+
+        <!-- Male and Female Fixture Columns -->
+        <div class="fixtures-columns">
+            <div class="fixtures-column" id="male-fixtures">
+                <h3>Male</h3>
+                <div id="male-fixtures-list"></div>
+            </div>
+            <div class="fixtures-column" id="female-fixtures">
+                <h3>Female</h3>
+                <div id="female-fixtures-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p><a href="https://www.igidr.ac.in/" target="_blank" class="footer-link">Sports Committee - IGIDR</a></p>
+            <p><a href="{{ url_for('index') }}" class="footer-link">Back to Homepage</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Function to fetch the JSON files and display fixtures for both Male and Female categories
+        $(document).ready(function(){
+            // Fetch Male Fixtures
+            $.getJSON("{{ url_for('static', filename='data/single_boys_Lawn_Tennis.json') }}", function(data) {
+                let maleFixtureHtml = '';
+                data.forEach((fixture, index) => {
+                    maleFixtureHtml += `<div class="fixture">
+                        <h4>Match ${index + 1}</h4>
+                        <p>${fixture}</p>
+                    </div>`;
+                });
+                $('#male-fixtures-list').html(maleFixtureHtml);
+            });
+
+            // Fetch Female Fixtures
+            $.getJSON("{{ url_for('static', filename='data/single_girls_lawn_tennis.json') }}", function(data) {
+                let femaleFixtureHtml = '';
+                data.forEach((fixture, index) => {
+                    femaleFixtureHtml += `<div class="fixture">
+                        <h4>Match ${index + 1}</h4>
+                        <p>${fixture}</p>
+                    </div>`;
+                });
+                $('#female-fixtures-list').html(femaleFixtureHtml);
+            });
+        });
+    </script>
+</body>
+</html>
+
+

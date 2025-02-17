@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixtures</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='fixtures.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>Fixtures</h1>
+
+    {% if fixtures %}
+        <div class="fixtures-list">
+            {% for fixture in fixtures %}
+                <div class="fixture-card">
+                    <div class="fixture-header">
+                        <h2>{{ fixture[2] }} vs {{ fixture[3] }}</h2>
+                        <p class="match-type">{{ fixture[4] }}</p>
+                    </div>
+                    <div class="fixture-details">
+                        <p><strong>Match Time:</strong> {{ fixture[6] }}</p>
+                        <p><strong>Date:</strong> {{ fixture[5] }}</p>
+                        <p><strong>Venue:</strong> {{ fixture[7] }}</p>
+                    </div>
+                    <div class="fixture-footer">
+                        <p class="result">Result: {% if fixture[8] %}{{ fixture[8] }}{% else %}Not available yet{% endif %}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <p>Fixtures yet to be announced.</p>
+    {% endif %}
+</div>
+<footer class="amazon-footer">
+    <p>&copy; Sports Committee - IGIDR | All Rights Reserved</p>
+    <p><a href="{{ url_for('index') }}" class="home-link">Back to Home Page</a></p>
+</footer>
+
+
+</body>
+</html>
+

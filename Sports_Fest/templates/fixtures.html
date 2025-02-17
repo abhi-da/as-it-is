@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixtures</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='fixture.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>Fixtures</h1>
+
+    <!-- Team Sports Section -->
+    <div class="category-card">
+        <h2>Team Sports</h2>
+        <ul class="sports-list">
+            <li><a href="{{ url_for('cricket_fixtures') }}">Cricket</a></li>
+            <li><a href="{{ url_for('dodgeball_fixtures') }}">Dodgeball</a></li>
+            <li><a href="{{ url_for('futsal_fixtures') }}">Futsal</a></li>
+            <li><a href="{{ url_for('volleyball_fixtures') }}">Volleyball</a></li>
+            <li><a href="{{ url_for('basketball_fixtures') }}">Basketball</a></li>
+            <li><a href="{{ url_for('tow_fixtures') }}">Tug of War</a></li>
+        </ul>
+    </div>
+
+    <!-- Individual Sports Section -->
+    <div class="category-card">
+        <h2>Individual Sports</h2>
+        <ul class="sports-list">
+            <li><a href="{{ url_for('badminton_fixtures') }}">Badminton</a></li>
+            <li><a href="{{ url_for('lawn_tennis_fixtures') }}">Lawn Tennis</a></li>
+            <li><a href="{{ url_for('table_tennis_fixtures') }}">Table Tennis</a></li>
+            <li><a href="{{ url_for('carrom_fixtures') }}">Carrom</a></li>
+            <li><a href="{{ url_for('chess_fixtures') }}">Chess</a></li>
+        </ul>
+    </div>
+
+</div>
+
+<footer class="amazon-footer">
+    <p>&copy; Sports Committee - IGIDR | All Rights Reserved</p>
+    <p><a href="{{ url_for('index') }}" class="home-link">Back to Home Page</a></p>
+</footer>
+
+</body>
+</html>
+
